@@ -16,6 +16,7 @@ class CreateProjectThemaTable extends Migration
           $table->increments('id');
           $table->string('naam');
           $table->text('beschrijving');
+          $table->integer('project_id')->unsigned();
           $table->foreign('project_id')
             ->references('id')
             ->on('project');

@@ -16,9 +16,10 @@ class CreateProjectGebeurtenisTable extends Migration
           $table->increments('id');
           $table->string('naam');
           $table->text('beschrijving');
+          $table->integer('project_id')->unsigned();
           $table->foreign('project_id')
-            ->references('project')
-            ->on('id');
+            ->references('id')
+            ->on('project_fase');
         });
     }
 

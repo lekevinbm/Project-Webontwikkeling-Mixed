@@ -15,6 +15,7 @@ class CreateProjectNotificationTable extends Migration
         Schema::create('project_notificatie', function(Blueprint $table){
           $table->increments('id');
           $table->string('bericht');
+          $table->integer('project_id')->unsigned();
           $table->foreign('project_id')
             ->references('id')
             ->on('project');
@@ -28,6 +29,6 @@ class CreateProjectNotificationTable extends Migration
      */
     public function down()
     {
-        Schema::drop('projectnotificatie');
+        Schema::drop('project_notificatie');
     }
 }

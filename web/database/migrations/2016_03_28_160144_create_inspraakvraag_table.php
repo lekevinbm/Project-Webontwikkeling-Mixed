@@ -15,9 +15,10 @@ class CreateInspraakvraagTable extends Migration
         Schema::create('inspraakvraag', function(Blueprint $table){
           $table->increments('id');
           $table->text('vraag');
+          $table->integer('fase_id')->unsigned();
           $table->foreign('fase_id')
-            ->references('project_fase')
-            ->on('id');
+            ->references('id')
+            ->on('project_fase');
         });
     }
 
