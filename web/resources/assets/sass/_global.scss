@@ -1,3 +1,17 @@
 body{
+  margin: 0; padding: 0;
   background: $body-background;
+  font-family: $regular-text-font;
+}
+
+h1, h2{
+  font-family: $title-font;
+}
+
+p{
+  font-family: $regular-text-font;
+}
+
+section{
+  padding: 25px;
 }
