@@ -1,0 +1,45 @@
+//login and register sections
+
+@media screen and (max-width: 500px){
+  #login-box{
+    width: 100%;
+    margin: none;
+  }
+}
+
+.login-box{
+  padding: 25px;
+  width: 500px;
+  margin: auto;
+}
+
+.login-box{
+  h1{
+    padding: 0;
+    margin: 0px 0px 25px 0px;
+  }
+}
+
+
+//hero
+
+.hero{
+  background: url(../img/antwerpen.jpg);
+  background-size: cover;
+  margin-top: -20px;
+}
+
+.hero-overlay{
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  height: 800px;
+  h1{
+    padding: 35px; margin: 0;
+    color: white;
+    font-size: 54px;
+  }
+}
+
+.hero-content{
+  padding-top: 270px;
+}
